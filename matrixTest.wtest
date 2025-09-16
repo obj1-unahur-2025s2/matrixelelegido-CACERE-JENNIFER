@@ -42,3 +42,10 @@ describe"testeamos trinity"{
     }
 
 }
+describe"testeamos la nave"{
+   test"cantidad de pasajeros inicial en la nave"{
+    assert.equals(3, nave.cantidadDePasajeros())
+   }
+   test"pasajero de mayor vitalidad al inicio"
+   {assert.equals(neo, nave.pasajeroConMayorVitalidad())}
+}

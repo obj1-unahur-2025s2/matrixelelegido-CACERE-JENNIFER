@@ -29,4 +29,11 @@ object trinity {
      
       method vitalidad() = 0
 }
+object nave{
+   const pasajeros= #{}
+
+   method cantidadDePasajeros()= pasajeros.size()
+   method pasajeroConMayorVitalidad()
+   {pasajeros.max({p => p.vitalidad()})}
+}
 
